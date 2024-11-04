@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*BOTÕES*/
+/*
+    .b1 {
+        a:link, a:visited { 
+        background-color: #008000;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10%;
+        box-shadow: 2px 2px 7px 1px #1e352a;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        a:visited {
+            background-color: green;
+            color: white;
+        }
+
+        a:hover {
+        background-color: #075f29;
+        color: white;
+        }
+
+        a:active{
+            background-color: #003f1a;
+            color:white;
+        }
+    }
+    .b2 {
+        a:link, a:visited {
+            background-color: #ffffff;
+            color: #008000;
+            padding: 10px 15px;
+            border-radius: 10%;
+            box-shadow: 2px 2px 7px 1px #1e3235;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: #cde4d4;
+            color: green;
+        }
+        a:active{
+            background-color: #5eb3a4;
+            color: rgb(0, 61, 0);
+        }
+    }
+*/
+.b3 {
+    a:link, a:visited {
+        background-color: #0D7Ea2;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;/* colocar em % distorce a borda do botão por causa dos valores diferentes de autura e largura */
+        box-shadow: 0px 1px 3px 1px #376970; /* valores são na ordem "esquerda-0-direita", "cima-0-baixo", esfumaçar e size*/
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:medium;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover{
+        background-color: #074B69;
+        color:#ffffff;
+    }
+    a:active{
+        background-color:#07648D;
+        color:#ffffff;
+    }
+}
+.b4 {
+    a:link, a:visited {
+        background-color: #ffffff;
+        color: #07648D;
+        padding: 8px 16px;
+        border: 1px solid #07648D;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 0px #376970;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:medium;
+        text-decoration: none;
+        display: inline-block;
+    }
+    a:hover{
+        background-color: #dae9ee;
+        color:#07648D;
+    }
+    a:active{
+        background-color:#e1f3f8;
+        color:#2e6276;
+    }
+}
+
+
+/*
+.b999 {
+    a:link, a:visited {
+        background-color: #311c44;
+        color: white;
+        padding: 16px 32px;
+        border-radius: 4%;
+        box-shadow: 2px 2px 4px 1px #0f0a3a;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: large;
+        text-decoration: none;
+        display: inline-block;
+        transform: rotate(65deg) translate(3px, 9px) skew(13deg, -20deg);
+    }
+}
+*/

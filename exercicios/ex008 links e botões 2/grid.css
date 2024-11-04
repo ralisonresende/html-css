@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*GRIG*/
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, auto);
+}
+#nvm-grid {
+    grid-area: 1 / 1 / span 1 / span 4;
+    /*row start / col start / roll end / col end*/
+}
+#menu {
+    grid-area: 2 / 1 / span 10 / span 1;
+    background-color: #AFB6E3;
+}
+#alert {
+    grid-area: 2 / 2 / span 2 / span 3;
+}
+#header {
+    grid-area: 3 / 2 / span 2 / span 3;
+}
+#content {
+    grid-column: span 3;
+    grid-row: span 1;
+    padding: 6px;
+    background-color: #C3DAFD;
+}
+#target {
+    grid-column: span 4;
+    grid-row: span 1;
+    padding: 6px;
+    background-color: #000000;
+    color: #fff;
+}
+#bnvm-grid {
+    grid-column: span 4;
+    grid-row: span 1;
+    display: inline;
+} /*botões ficaram empilhados ao inves de um ao lado do outro*/
+
+/*
+    Grid precisa de melhorias
+- entender melhor o sistema de linhas e colunas
+- grid n está completamente resposivo ainda
+*/

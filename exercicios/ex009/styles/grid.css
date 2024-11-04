@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+#header-grid{
+    grid-column: span 12;
+    grid-row: span 1;
+}
+#nvm-grid{
+    grid-column: span 12;
+    grid-row: span 1;
+}
+#alert-grid{
+    grid-column: span 12;
+    grid-row: span 1;
+}
+#content-grid{
+    grid-column: span 12;
+    grid-row: span 1;
+}
+#footer-grid{
+    grid-column: span 12;
+    grid-row: span 1;
+}

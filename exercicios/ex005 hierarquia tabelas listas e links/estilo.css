@@ -1,0 +1,510 @@
+@charset "UTF-8";
+
+body {
+    background-color: #a8acac;
+    margin: 0%;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.txt {
+    text-align: left;
+    text-indent: 50px;
+    letter-spacing: none;
+    word-wrap: none; /*quebra de palavra*/
+}
+.gradient {
+    background-image: linear-gradient(to bottom, #EAC3FD, #C3DAFD);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+/* Color Theme Swatches in Hex */
+.pastel-rain-1-hex { color: #EAC3FD; }
+.pastel-rain-2-hex { color: #C4AFE3; }
+.pastel-rain-3-hex { color: #D3CDFA; }
+.pastel-rain-4-hex { color: #AFB6E3; }
+.pastel-rain-5-hex { color: #C3DAFD; }
+
+/*GRIG*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 50px 60px auto auto 40px;
+}
+.nvm-grid {
+    grid-column: span 12;
+}
+.alert {
+    grid-column: span 12;
+}
+.header {
+    grid-column: span 12;
+    background-color: #C4AFE3;
+}
+.menu {
+    grid-column: span 3;
+    background-color: #AFB6E3;
+}
+.content {
+    grid-column: span 9;
+    background-color: #C3DAFD;
+}
+.bnvm-grid {
+    grid-column: span 12;
+}
+/*NAV*/
+    .nvm {
+        min-width: 590px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0D7Ea2;
+        }
+        li {
+            float: left;
+        }
+        li a{
+            display: block;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 16px 30px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #074B69;
+        }
+    }
+    .nvm-img{
+        float: left;
+        margin: 10px 10px 0px;
+    }
+
+/*
+    .nvm2 {
+        min-width: 590px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0D7Ea2;
+        }
+        li {
+            padding: 0;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% auto;
+            grid-template-rows: 50px;
+
+        }
+        li a{
+            display: block;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 16px 30px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #074B69;
+        }
+    }
+    .nvm2-img{
+        float: left;
+        margin: 10px 10px 0px;
+    }
+*/
+
+    .bnvm { 
+        position: relative;
+        display: flex;
+    }
+    .bnvm > span {
+        margin: 10px 20px 10px 0px;
+    }
+
+/*ALERTA*/
+/*warning*/
+    .a-warning{
+        background-color: #F5E6AF;
+        border-radius: 1px;
+        border-left: solid #E6C74C 6px;
+        margin: -15px 0px 0px 0px; /*esse "-15px" ficou com uma cara de gabiarra sem limites*/
+    }
+    .a-warning > p{
+        padding: 15px 40px 18px 49px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #776017;
+    }
+    .a-warning > span{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+    .a-warning > svg{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+
+/*error*/
+    .a-error{
+        background-color: #ECBEC6;
+        border-radius: 1px;
+        border-left: solid #E52207 6px;
+        margin: -15px 0px 0px 0px;
+    }
+    .a-error > p{
+        padding: 15px 40px 18px 49px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6F3331;
+        /*text-transform: uppercase;*/
+    }
+    .a-error > span{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+    .a-error > svg{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+
+/*info*/
+    .a-info{
+        background-color: #C3EBFA;
+        border-radius: 1px;
+        border-left: solid #4F97D1 6px;
+        margin: -15px 0px 0px 0px;
+    }
+    .a-info > p{
+        padding: 15px 40px 18px 49px; /*top, right, bottom and left*/
+        font-family: Arial, Helvetica, sans-serif;
+        color: #224A58;
+    }
+    .a-info > span{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+    .a-info > svg{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+
+/*success*/
+    .a-success{
+        background-color: #DFEACD;
+        border-radius: 1px;
+        border-left: solid #4D8055 6px;
+        margin: -15px 0px 0px 0px; 
+    }
+    .a-success > p{
+        padding: 15px 40px 18px 49px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2F4A0B;
+    }
+    .a-success > span{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+    .a-success > svg{
+        padding: 15px 8px 0px 23px;
+        float: left;
+    }
+
+/*TABELAS*/
+    .tabela01 {
+        width: 100%;
+        background-color: #e9e9e9;
+        border-collapse: collapse;
+        cursor: not-allowed;
+        /*border-radius: 20px; não consegui fazer funcionar corretamente em toda a tabela acho q entra em conflito com o "border-collapse" */
+
+        caption { /*caption parece não ser afetado por algumas definições gerais, como por exemplo "background-color"*/
+            border: 1px solid #3d3d3d;
+            background-color: #e9e9e9;
+            border-radius: 5px;
+            padding: 6px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        colgroup {
+            background-color: #99bed6;
+        }
+        th {
+            border: 1px solid #686868;
+            padding: 4px;
+            text-align: center;
+            text-decoration: underline;
+            width: 14%;
+        } 
+        td {
+            border: 1px solid #929292;
+            vertical-align: bottom;
+            text-align: left;
+            height: 80px;
+        }
+    }
+    .tabela02{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        max-width: 1000px;
+        min-width: 600px;
+        background-color: whitesmoke;
+        
+        caption {
+            border: 1px solid #dddddd;
+            padding: 10px 25px; /*(com 1 valor=todos) (com 2 valores=vertical e horizontal) (com 3 ou 4 valores=cima, esquerda, baixo, direita)*/
+            background-color: whitesmoke;
+            font-size: larger;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        /* "nth-child( )" é o comando pra criar essas tabelas com linha com cores diferentes no () pode ser colocado "even" ou "odd" o efeito é o mesmo, so muda quais linhas vai afetar par ou impar*/
+    }
+    .tabela03{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        background-color: whitesmoke;
+        max-width: 1000px;
+        min-width: 600px;
+        
+        caption {
+            border: 1px solid #dddddd;
+            padding: 10px 25px; 
+            background-color: whitesmoke;
+            font-size: larger;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px 10px;
+        }
+        tr:hover {
+            background-color: rgba(179, 179, 179, 0.5);
+        }
+        th:nth-child(odd),td:nth-child(odd) {
+            background-color: rgba(179, 179, 179, 0.5);
+        }/*"nth-child( )" tambem funciona pra colunas*/
+
+    }
+    .tabela04{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        max-width: 1000px;
+        min-width: 600px;
+        background-color: whitesmoke;
+        cursor: wait;
+        
+        caption {
+            border: 1px solid #dddddd;
+            padding: 10px 25px; 
+            background-color: whitesmoke;
+            font-size: larger;
+        }
+        th, td {
+            border: 1px solid #c2c2c2;
+            padding: 8px 10px;
+        }
+        tr:hover {
+            background-color: rgba(255, 0, 0, 0.5);
+        }/*hover n funcionou direito, acredito q seja devido a ja ter se sobreposto duas vezes na regra abaixo*/
+        tr:nth-child(even),th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(179, 179, 179, 0.2);
+        }/*funciona pra ambos tambem*/
+    }
+    .tabela05{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        max-width: 1000px;
+        min-width: 600px;
+        background-color: whitesmoke;
+        overflow-x: auto; /*isso supostamente deveria adicionar uma barra de rolagem vertical abaixo da tabela quando ela atingice o tamanho minimo, mas n funcionol*/
+        
+        caption {
+            border: 1px solid #dddddd;
+            padding: 10px 25px; 
+            background-color: whitesmoke;
+            font-size: larger;
+        }
+        th, td {
+            border-bottom: 1px solid #dddddd;
+            padding: 8px 10px;
+            padding-right: 40px;
+            text-align: left;
+        }
+        tr:hover {
+            background-color: #dddddd;
+        }
+    }
+
+/*BOTÕES*/
+/*
+    .b1 {
+        a:link, a:visited { 
+        background-color: #008000;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 10%;
+        box-shadow: 2px 2px 7px 1px #1e352a;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+
+        a:visited {
+            background-color: green;
+            color: white;
+        }
+
+        a:hover {
+        background-color: #075f29;
+        color: white;
+        }
+
+        a:active{
+            background-color: #003f1a;
+            color:white;
+        }
+    }
+    .b2 {
+        a:link, a:visited {
+            background-color: #ffffff;
+            color: #008000;
+            padding: 10px 15px;
+            border-radius: 10%;
+            box-shadow: 2px 2px 7px 1px #1e3235;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: #cde4d4;
+            color: green;
+        }
+        a:active{
+            background-color: #5eb3a4;
+            color: rgb(0, 61, 0);
+        }
+    }
+*/
+    .b3 {
+        a:link, a:visited {
+            background-color: #0D7Ea2;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;/* colocar em % distorce a borda do botão por causa dos valores diferentes de autura e largura */
+            box-shadow: 0px 1px 3px 1px #376970; /* valores são na ordem "esquerda-0-direita", "cima-0-baixo", esfumaçar e size*/
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:medium;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: #074B69;
+            color:#ffffff;
+        }
+        a:active{
+            background-color:#07648D;
+            color:#ffffff;
+        }
+    }
+    .b4 {
+        a:link, a:visited {
+            background-color: #ffffff;
+            color: #07648D;
+            padding: 8px 16px;
+            border: 1px solid #07648D;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px 0px #376970;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:medium;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover{
+            background-color: #dae9ee;
+            color:#07648D;
+        }
+        a:active{
+            background-color:#e1f3f8;
+            color:#2e6276;
+        }
+    }
+    .bprimario {
+        background-color: #0D7Ea2;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 1px #376970; 
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:medium;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bprimario:hover {
+        background-color: #074B69;
+        color:#ffffff;
+    }
+    .bprimario:active{
+        background-color:#07648D;
+        color:#ffffff;
+    }
+
+/*
+    .b999 {
+        a:link, a:visited {
+            background-color: #311c44;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 4%;
+            box-shadow: 2px 2px 4px 1px #0f0a3a;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-decoration: none;
+            display: inline-block;
+            transform: rotate(65deg) translate(3px, 9px) skew(13deg, -20deg);
+        }
+    }
+*/
+
+    .txtlink2{    
+        a:link {
+            color:#344ddf;text-decoration:none;
+        }
+        a:visited {
+            color:#344ddf;text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        } 
+    } /*assim n funciona, du know why*/
+
+    a.txtlink:link {
+        color:#344ddf;text-decoration:none;
+    }
+    a.txtlink:visited {
+        color:#344ddf;text-decoration:none;
+    }
+    a.txtlink:hover {
+        text-decoration:underline;
+    } /*so consegui fazer funcionar assim, mas precisa ser separado assim? não funciona da mesma maneira q os botões ali em cima?*/
+
+    ul.a{
+        list-style-image: url(imagens/icone/favicon-16x16.png);
+    }
+    ol.a{
+        list-style-image: url(imagens/icone/favicon-16x16.png);
+    }

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100px 800px 100px 200px 50px;
+    grid-gap: 6px;
+}
+.container > div {
+    text-align: center;
+    font-size: 2em;
+}
+
+/*conteudo abaixo foi copiado, entender melhor o funcionamento dele depois*/
+.container > div:nth-child(1n) {
+    background-color: #96ceb4;	
+} 
+.container > div:nth-child(3n) {
+    background-color: #88d8b0;
+}
+.container > div:nth-child(2n) {
+        background-color: #ff6f69;
+}
+.container > div:nth-child(4n) {
+        background-color: #ffcc5c;
+}

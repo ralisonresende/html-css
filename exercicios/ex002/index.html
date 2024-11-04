@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!--ctrl+shift+p abre barra de pesquisa de comandos--> 
+    <!--ABB para envelopar codigo, incluir tags em texto selecionado-->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Para que o site tenha suporte a caractere especial, ç á à ã ê -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para que o site ocupe toda a area disponivel no navegador -->
+    
+    <title>Potato batata</title>
+</head>
+
+<!-- style é css-->
+<style>    
+    h1 {
+        color: green; text-align: center;
+        background-color: tomato;
+        border: 4px solid green; 
+        font-family: sans-serif; 
+        font-size: 44px;
+    }
+    /* pra por mais de um style usar o ; antes de fechar as aspas */
+    /* font-size: pode ser em % */
+    /* cores podem ser selecionadas pelo nome, pelo rgb "rgb(000, 000, 000);" HEX "#ffffff;" HSL "hsl(0, 100%, 50%);" RGBA "rgba(000, 000, 000, 0.0);" HSLA "hsla(0, 100%, 50%, 0.0)" */
+
+    h2 {
+        border: 2px solid powderblue; 
+        text-align: center;
+        color:rgb(60, 60, 60);
+    }  
+    p {
+        font-family:Arial, Helvetica, sans-serif; 
+        margin-top: 5px;
+    }
+    /* margem fora da borda "margin" margem dentro da borda "padding" pode ser em px, %, etc. medida "auto" tenta se adaptar restante das medidas */
+    /* as medidas da margem são nessa ordem: cima, direita, baixo e esquerda */
+    /* */
+</style>
+<!-- queria mecher na imagem do site aki mas n funcionou, procurar depois*-->
+
+<body>
+    <h1 id="C1" title="verde e vermelho pq sim :)">Modelo Generico com Varios Testes</h1>
+     <!-- title= texto descritivo que aparece quando passa o mouse por cima -->
+     
+     <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_blank" title="câmara dos deputados">This is a link</a> dentro do texto. </p>   
+     <!-- link no meio do texto -->
+     <!-- "href=" onde vai o link  "target=" pra especificar como o link deve ser aberto, ex: _blank pra abrir em outra janela, ou _self pra abrir na janela atual-->
+     <!-- da pra por title= em link-->
+     
+     <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" title="num tem">
+     <!-- src= local do arquivo -->
+     <!-- alt= se a imagem n carregar ele mostra esse texto -->
+    
+    
+    <h2> Segundo Titulo </h2>
+     <p>Lorem ipsum loren ipson çáàêão. dolor sit amet, <!-- posso meter comentario no meio do texto que não faz diferença -->consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.
+     <br>
+
+     <img src="garota_jaqueta.png" alt="Girl with a jacket" title="garota de jacket" style="width:120px;height:111px;float:right;border: 2px solid blueviolet; margin: 20px 5px 50px auto;"> 
+     <!-- Imagem pode ser colocada sem o tamanho. --> 
+     
+
+     <br>aki vai o texto com <a href="https://www.camara.leg.br/">link da câmara</a>.
+     
+     <br>Vivamus sed elit fringilla, convallis justo vitae, varius nunc. Vivamus a venenatis mi, eu viverra nisi. Mauris et leo in arcu pulvinar consectetur id eget mauris. Sed ac eros accumsan, convallis nibh eget, suscipit mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non felis nec neque pellentesque <i>varius in sed nibh. Sed lobortis porta hendrerit. Aliquam erat volutpat. Aenean vel tortor et libero elementum vehicula eget at nulla. Sed aliquam diam eu odio ornare egestas. Aliquam accumsan nibh dignissim odio congue tincidunt.</i>😂😂🤣</p>
+   
+     <p title="About" W3Schools> alibaba </p>
+     <meta>
+
+     <p><!--emotes e simbolos https://html-css-js.com/html/character-codes/icons/ Funciona tambem usar win+. -->
+        Emotes e simbolos
+        &uparrow;
+        &dollar;
+        &downarrow;
+        &#82;&#36;
+        🤡 ®©© 😂<!-- wind+. assim funciona mas n em todos os navegadores-->
+        &#128514;<!--https://html-css-js.com/html/character-codes/icons/-->
+        &#x1F602;<!--&#x seguido pelo codigo disp no https://emojipedia.org/-->
+     </p> 
+     
+   <hr>
+   
+    <h3>Estilos de Texto</h3>
+     <p>
+      <b> My Bonnie lies over the ocean. </b> IIIIIIII<!--bold-->
+      <strong> My Bonnie lies over the ocean. </strong> IIIIIIII <!--tag com significado/semantica, indicar que essa parte do texto tem mais importancia-->
+      <i> My Bonnie lies over the ocean. </i> IIIIIIII<!--italic-->
+      <em> My Bonnie lies over the ocean. </em> IIIIIIII<!--tag com significado/semantica, indicar que essa parte do texto tem mais enfase-->
+      <mark> My Bonnie lies over the ocean. </mark> IIIIIIII<!--marcado--> 
+      <ins> My Bonnie lies over the ocean. </ins> IIIIIIII<!--sublinhado-->
+      <small> My Bonnie lies over the ocean. </small> IIIIIIII<!--pequeno-->
+      <del> My Bonnie lies over the ocean. </del> IIIIIIII<!--cortado-->
+      H<sub>2</sub>O IIIIIIII<!--lebra a baixo-->
+      WWW<sup>[3]</sup>.<!--letra a cima-->
+      <code> My Bonnie lies over the ocean.</code> <!--utilizada para escrever codigos, fonte monoespaçada-->
+    </p>
+    
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    
+    <p>A <abbr title="Universidade de Brasília">UnB</abbr> está de greve.</p> 
+    <!--para incluir abreviação de palavras-->
+
+   <hr>
+      
+   <h5>Poemas e outros</h5>
+
+     <pre><!-- Usado pra poemas, mas o texto n se adapta ao tamanho da pag. pode ser usado para escrever codigo tambem -->
+     My Bonnie lies over the ocean. 
+   
+         My Bonnie lies over the sea.
+   
+     My Bonnie lies over the ocean.
+   
+         Oh, bring back my Bonnie to me.
+     </pre>
+         
+     <p>Here is a quote from WWF's website:
+        <blockquote cite="http://www.worldwildlife.org/who/index.html"><!-- O link é apenas para que o navegador saiba de ondem vem a citação, n fica visivel para o usuario, direitos autorais talvez? -->  
+           For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote> </p>
+    
+     <address><!--endereço fisico-->
+      Written by John Doe.<br>
+      Visit us at:<br>
+      Example.com<br>
+      Box 564, Disneyland<br>
+      USA
+     </address>
+
+     <a href="#C1"> voltar ao topo</a>
+
+</body>
+</html>

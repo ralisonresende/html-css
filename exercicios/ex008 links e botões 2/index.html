@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="tabelas.css">
+    <link rel="stylesheet" href="alertas.css">
+    <link rel="shortcut icon" href="imagens/icone/gatoloko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>links e botões</title>
+</head>
+<body>
+    <header>
+        <h1>Site Batata</h1>
+    </header>
+    <nav class="nvm" id="nvm">
+        <ul style="overflow-x: auto;">
+            <li>
+                <img src="imagens/icone/favicon-32x32.png" alt="gatoloko">
+            </li>
+            <li><a href="index.html">Botões</a></li>
+            <li><a href="pag002.html">Outros</a></li>
+            <li><a href="pag003.html">Tags html Hierarquia</a></li>
+            <li class="dropdown-simple">
+                <a href="calendario.html" class="dropbtn">calendario</a>
+                <div class="dropdown-simple-content"> 
+                    <table>
+                        <tr>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                            <th>SUN</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <input type="text" class="boxpesquisa" placeholder="Pesquisar" aria-label="Pesquisar">
+        </ul>
+    </nav>
+
+    <div class="a-info">
+        <span> <img src="imagens/info.svg" alt="catloko"> </span>
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <p>
+            <strong>Info</strong>
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit optio voluptates eos at atque eligendi natus consectetur ipsum? Ratione, omnis harum laudantium sunt aliquid repellat esse quisquam eaque repellendus!
+        </p>
+    </div>
+    <div class="a-success">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#2F4A0B"><path d="M480-96q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q63 0 120 19t105 54l-52 52q-37-26-81-39.5T480-792q-130 0-221 91t-91 221q0 130 91 221t221 91q130 0 221-91t91-221q0-21-3-41.5t-8-40.5l57-57q13 32 19.5 67t6.5 72q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm-55-211L264-468l52-52 110 110 387-387 51 51-439 439Z"/></svg> 
+        <!--horrivel mas funciona, ver melhor como incluir essas bibliotecas de icones-->
+        <!--da pra carregar arquivo svg com a tag "img"-->
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <p> 
+            <strong>Sucesso</strong>
+            <br> aleta ai man 👍
+        </p>
+    </div>
+    <div class="a-warning">
+        <span> <img src="imagens/warning.svg" alt="catloko"> </span>
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <p>
+            <strong>Alerta</strong>
+            <br>aleta ai man 👍 
+        </p>
+    </div>
+    <div class="a-error">
+        <span> <img src="imagens/error.svg" alt="catloko"> </span>
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <p>
+            <strong>Error</strong>
+            <br> depois ver como q coloca o botão de fechar o alerta 😀
+        </p>
+    </div>
+    <div class="a-info">
+        <span> <img src="imagens/info.svg" alt="catloko"> </span>
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <p>arrumar o botão de fechar o alerta</p> <!--agora como q eu arrumo esse botão aki? talvez seja melhor colocar os valores das magens, bordar etc em porcentagem?-->
+    </div>
+
+
+    <header>
+        <h1>botões e outros</h1>
+    </header>
+
+    <div> 
+        <button class="bprimario">Salvar</button> <!--arrumei o botão mas como eu bot o link dentro?-->
+        <button class="bsecundario">Salvar e continuar</button>
+        <button class="bsecundario">Label</button>
+        <button class="bsecundario">Label</button>
+        <span class="dropdown-button">
+            <button class="bsecundario">Dropdown</button>
+            <span class="dropdown-button-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </span>
+        </span>
+        <span class="dropdown-button-click">
+            <button class="bsecundario">Dropdown</button>
+            <span class="dropdown-button-click-content">
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </span>
+        </span>
+        <button class="bprimario" disabled="disabled">Label</button>
+    </div>
+<br>
+    <div>
+        <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+        <button class="bround" disabled="disabled"><img src="imagens/x.svg" alt="X"></button>
+        <button class="bround"><img src="imagens/arrows/Chevrons-double-left.svg" alt="double left"></button>
+        <button class="bround"><img src="imagens/arrows/Chevrons-left.svg" alt="left"></button>
+        <button class="bround"><img src="imagens/arrows/Chevrons-right.svg" alt="right"></button>
+        <button class="bround"><img src="imagens/arrows/Chevrons-double-right.svg" alt="double right"></button>
+    </div>
+<br>
+
+
+<br>
+<label for="">Pesquisar</label>
+<input type="text" placeholder="Pesquisar">
+<br>
+
+<label for="">Email</label>
+<input type="email" placeholder="Email" required>
+<br>
+<label for="">Senha</label>
+<input type="password" placeholder="Senha" required>
+<br><br>
+
+<input type="radio" name="radio" id="">
+<input type="radio" name="radio" id="">
+<br><br><!--eles terem o mesmo nome previne q ambos sejam marcados simuntaneamente-->
+
+<input type="checkbox" name="checkbox" id="">
+<input type="checkbox" name="checkbox" id="">
+<input type="checkbox" name="checkbox" id="">
+<br><br>
+
+<input type="date" name="" id="">
+<input type="month" name="" id="">
+<input type="datetime-local" name="" id="">
+<br><br>
+
+<input type="file">
+<br><br>
+<input type="color" name="" id="">
+<br>
+
+<input type="image" src="" alt="">
+<br><!--esse não funcionou por algum motivo-->
+<input type="hidden" name="">
+<br><!--pra esconder um imput mas sem precisar remover do codigo? imagino q de pra mudar com java, e fazer o imput aparece depois de alguma ação-->
+
+<input type="range" name="" id="">
+<br>
+
+<input type="reset" value="">
+<br>
+<input type="submit" value="">
+<br><br><!--não entendi muito pra que serve esses-->
+
+<input type="search" name="" id="">
+<br>
+<input type="tel" name="" id="">
+<br>
+<input type="url" name="" id="">
+<br><br>
+
+<select name="Outros" id="">
+    <option value="">BatataA</option>
+    <option value="">BatataB</option>
+    <option value="">BatataC</option>
+    <option value="">BatataD</option>
+</select>
+
+<!-- aki foi minhas tentativas fracassadas de fazer um Modal, popup de confirmação
+<div>
+        <table class="popup-warning">
+            <caption>
+                <strong>Label</strong>
+            </caption>
+            <tr>
+                <th>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa officia eaque facere iusto autem odit laboriosam alias aliquid in consectetur quae eius necessitatibus earum, tenetur distinctio ab maiores, sed excepturi.</th>
+            </tr>
+            <div>
+                <button class="bprimario">Salvar</button>
+                <button class="bsecundario">Salvar e continuar</button>
+            </div>
+        </table>
+    </div>
+
+    <div class="modal">
+        <h2>Label <button class="bround"><img src="imagens/x.svg" alt="X"></button></h2>
+            
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa non blanditiis quibusdam perferendis iusto, soluta voluptate amet voluptatem veniam vel, ullam quidem voluptas libero quaerat unde odit. Unde, ullam.</p>
+        <hr>
+        <div class="modal-footer">
+            <button class="bprimario">Salvar</button>
+            <button class="bsecundario">Salvar e continuar</button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div>
+            <h2>Label</h2>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa non blanditiis quibusdam perferendis iusto, soluta voluptate amet voluptatem veniam vel, ullam quidem voluptas libero quaerat unde odit. Unde, ullam.</p>
+        </div>
+        <div>
+            <button class="bprimario">Salvar</button>
+            <button class="bsecundario">Salvar e continuar</button>
+        </div>
+    </div>
+-->
+
+    <section>
+        <h2>Tabela 02.1</h2>
+            <div style="overflow-x: auto;">
+                <table class="tabela02"> <!--linhas e colunas se adapta altomaticamente aos tamanhos, mas posso definitar "tamanhos" com css usando "padding"-->
+                    <caption>
+                        <strong>One Piece e afins</strong>
+                    </caption>
+                    <tr>
+                        <th>Luffy</th>
+                        <th>quero que essa coluna do meio seja maior que as outras</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>borracha</td>
+                        <td>quero que essa coluna do meio seja maior que as outras</td>
+                        <td>
+                             <span class="dropdown-button">
+                                <button class="bsecundario">⋮</button>
+                                <span class="dropdown-button-content">
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>carne</td>
+                        <td>quero que essa coluna do meio seja maior que as outras</td>
+                        <td><button class="bsecundario">⋮</button></td>
+                    </tr>
+                    <tr>
+                        <td>loren</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus accusamus mollitia natus commodi voluptate! Eaque qui deserunt nostrum voluptatibus amet praesentium eius atque quisquam doloremque labore, corporis debitis velit maiores?</td>
+                        <td><button class="bsecundario" disabled="disabled">⋮</button></td>
+                    </tr>
+                </table>
+            </div>
+        <br>
+    </section>
+
+    <section>
+    <nav class="bnvm">
+        <button class="bsecundario"><a href="#nvm">↑ topo</a></button>
+        <!--<span class="b4"><a href="#nvm"> ↑ topo</a></span>-->
+    </nav> <!--procurar transições/animações com css-->
+
+
+    </section>
+</html>

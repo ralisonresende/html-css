@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/icone/gatoloko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilo.css"> 
+    <!-- "./"referencia a mesma pasta (opcional)-->
+    <!-- "../"referencia a uma pasta anterior (tem q usar se quero linkar algo que está uma pasta atras)--> 
+    <title>Links e Botões</title>
+
+</head>
+<body>
+    <h1 id="C1">Links e Botões</h1>
+
+    <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_blank" title="câmara dos deputados">This is a link</a> dentro do texto. </p>   
+    <!-- link no meio do texto -->
+    <!-- "href=" onde vai o link  "target=" pra especificar como o link deve ser aberto-->
+    <!-- da pra por title= em link-->
+<div class="b1">
+    <a href="http://www.camara.leg.br" target="_blank" rel="external" title="primario">
+         Botão
+    </a>
+</div>
+
+    <p class="b2"><a href="http://www.camara.leg.br" target="_blank" rel="external" title="secundario"> Botão</a></p>
+    
+    <nav class="bnvm">
+        <p class="b3"><a href="http://www.camara.leg.br" target="_blank" rel="external" title="primario"> Botão</a></p>
+        <p class="b4"><a href="http://www.camara.leg.br" target="_blank" rel="external" title="secundario"> Botão</a></p>
+        <p class="none"><a href="#" target="_self" title="desativado"> Botão</a></p>
+        <p class="b3"><a href="http://www.camara.leg.br" target="_blank" rel="external" title="primario"> Câmara dos Deputados</a></p>
+    </nav>
+    
+<section>    
+        <a href="https://br.pinterest.com/pin/972777588249689957/" target="_blank" rel="nofollow"><img src="garota_jaqueta.png" alt="Girl with a jacket" title="Pinterest" width="121" height="111"></a> <!-- imagem como link--> <br>
+        <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_blank" title="_blank">This is a link</a> dentro do texto. </p>  <!--_blank pra abre o link em outra janela -->
+        <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_self" title="_self">This is a link</a> dentro do texto. </p> <!--_self pra abre o link janela atual-->
+        <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_parent" title="_parent">This is a link</a> dentro do texto. </p>  <!--abre na mesma janela tambem?-->
+        <p>aki vai o texto. <a href="https://www.camara.leg.br/" target="_top" title="_top">This is a link</a> dentro do texto. </p> <!--abre na mesma janela tambem?--> 
+</section>
+
+    <!-- "relative URLs, links para paginas ou itens no mesmo website/server? "
+    <p><a href="html_images.asp">HTML Images</a></p>
+    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+     -->
+    <!-- não consegui pensar em como testar isso -->
+    
+    <p> Link como botão requer javascript?</p>
+     <button  class="b2">
+      esse botão não faz nada ainda :) </button>
+      <!-- imagino que requer um objeto/script contendo a direção que o botão vai levar-->
+      <!-- pq "class=" não funciona aki?
+       onclick="alert ('texto aleatorio')"-->
+
+      <!--
+      <p class="b999"><a href="http://www.camara.leg.br" target="_blank" title="primario"> botão aleatorio</a></p>
+      -->
+<br>
+<h2> Texto só pra ocupar espaço </h2>
+<p>
+    Lorem ipsum loren ipson çáàêão. dolor sit amet, <!--posso meter comentario no meio do texto que não faz diferença-->consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. <a href="#">Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.</a> 
+    <!--ctrl+shift+p abre barra de pesquisa de comandos--> 
+    <!--ABB para envelopar codigo, incluir tags em texto selecionado-->
+        <br>
+   
+    <img src="garota_jaqueta.png" alt="Girl with a jacket" width="481" height="444" title="garota de jacket" style="border: 2px solid blueviolet; margin: 20px 5px 50px auto;"> 
+        <!-- Imagem pode ser colocada sem o tamanho. --> 
+        
+   
+    <br>aki vai o texto com <a href="https://www.camara.leg.br/">link da câmara</a>.
+        
+    <br>Vivamus sed elit fringilla, convallis justo vitae, varius nunc. Vivamus a venenatis mi, eu viverra nisi. Mauris et leo in arcu pulvinar consectetur id eget mauris. Sed ac eros accumsan, convallis nibh eget, suscipit mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non felis nec neque pellentesque varius in sed nibh. Sed lobortis porta hendrerit. Aliquam erat volutpat. Aenean vel tortor et libero elementum vehicula eget at nulla. Sed aliquam diam eu odio ornare egestas. Aliquam accumsan nibh dignissim odio congue tincidunt.😂😂🤣
+
+<hr>
+<h2>Links para download</h2>
+
+     <div>
+         <p class="b3"><a href="pdfs/Comunicação mensal de Frequência de Estágio - Passo a Passo.pdf" > abrir em PDF</a></p>
+         <p class="b4"><a href="pdfs/Comunicação mensal de Frequência de Estágio - Passo a Passo.pdf" download="Comunicação mensal de Frequência de Estágio - Passo a Passo.pdf" type="application/pdf"> Baixar arquivo em PDF</a></p> <!-- não está baixando devido o navegador estar reconhecendo o formato -->
+         <p class="b4"><a href="pdfs/Comunicação mensal de Frequência de Estágio - Passo a Passo.7z" download="Comunicação mensal de Frequência de Estágio - Passo a Passo.7z" type="application/zip"> Baixar arquivo em zip</a></p>
+     </div>
+
+
+     <p><a href=""></a></p>
+     <p><a href=""></a></p> <!-- digitar "p*2>a" ja cria dois paragrafos com link, funciona com outrso comandos tambem-->
+
+<hr>
+    <nav>
+        <ul>
+            <li type="none"><p class="b3"><a href="#C1">↑</a></p></li>
+            <li type="none"><p class="b3"><a href="pag002.html" target="_self" rel="next">→</a></p></li>
+            <li type="none"><p class="b3"><a href="subpaginas/pag003.html" target="_self" rel="next">→→</a></p></li>
+        </ul>
+    </nav>
+</body>
+</html>

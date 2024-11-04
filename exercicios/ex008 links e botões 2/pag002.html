@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="tabelas.css">
+    <link rel="stylesheet" href="alertas.css">
+    <link rel="shortcut icon" href="imagens/icone/gatoloko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Grid2</title>
+</head>
+<body id="wrapper">
+    <nav class="nvm" id="nvm-grid">
+            <ul>
+                <li class="nvm-img">
+                    <img src="imagens/icone/favicon-32x32.png" alt="gatoloko">
+                </li>
+                <li><a href="index.html">Botões</a></li>
+                <li><a href="pag002.html">Outros</a></li>
+                <li><a href="pag003.html">Tags html Hierarquia</a></li>
+                <li>
+                    <a href="calendario.html">calendario</a>
+                    <div> 
+                        <table>
+                            <tr>
+                                <th>MON</th>
+                                <th>TUE</th>
+                                <th>WED</th>
+                                <th>THU</th>
+                                <th>FRI</th>
+                                <th>SAT</th>
+                                <th>SUN</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li style="float: right;"><a href="#"> O</a></li>
+            </ul>
+    </nav>
+
+    <script>
+        function dragstartHandler(ev) {
+          // Add the target element's id to the data transfer object
+          ev.dataTransfer.setData("application/my-app", ev.target.id);
+          ev.dataTransfer.effectAllowed = "move";
+        }
+        function dragoverHandler(ev) {
+          ev.preventDefault();
+          ev.dataTransfer.dropEffect = "move";
+        }
+        function dropHandler(ev) {
+          ev.preventDefault();
+          // Get the id of the target and add the moved element to the target's DOM
+          const data = ev.dataTransfer.getData("application/my-app");
+          ev.target.appendChild(document.getElementById(data));
+        }
+      </script>
+
+              
+<button class="bprimario" id="p1" draggable="true" onclick="alert('palavra')" ondragstart="dragstartHandler(event)">Botão Primario</button>
+
+<div class="a-error" id="p1" draggable="true" ondragstart="dragstartHandler(event)">
+  <span> <img src="imagens/error.svg" alt="catloko"> </span>
+  <button class="bround"><img src="imagens/x.svg" alt="X"></button>
+  <p>
+      <strong>Error</strong>
+      <br> depois ver como q coloca o botão de fechar o alerta 😀
+  </p>
+</div>
+
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+<div id="target" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+  container
+</div>
+      
+</body>
+</html>

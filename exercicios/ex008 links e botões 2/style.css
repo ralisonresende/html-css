@@ -1,0 +1,450 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*fonts da internet*/
+@font-face {
+    font-family: bauhaus;
+    src: url(fonts/Bauhaus.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+} /*pra adicionar fonte interna, depois olhar o quão pertinente isso é*/
+
+/* fromatos de fonte 
+    opentype (otf)
+    truetype (ttf)
+svg
+*/
+
+/* TIPOS DE SELETORES PERSONALIZADOS
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo elemento
+    >  = children
+*/
+
+body {
+    background-color: #ffffff;
+    margin: 0%;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'bauhaus', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
+h1::before { /*pseudo elementos q podem ser aplicados nas classes, pesquisar mais a utilidade*/
+    font-size: 0.4em;
+    content: '(☞ﾟヮﾟ)☞';
+}
+h1::after {
+    font-size: 0.4em;
+    content: '☜(ﾟヮﾟ☜)';
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+/* medidas para font-size:
+medida absoluta: cm, mm, in, px, pt, pc
+medida relativa: em, ex, rem, vw, vh, %
+
+medidas comumente utilizadas para font-size: 
+px e em
+
+16px = 1em
+
+16px é geralmente o tamanho padrão
+em geralmente multiplica o tamanho padrão da fonte
+*/
+    font-style: normal;
+    text-decoration: none;
+    font: normal 400 1em "Roboto", sans-serif;/*font-style, font-weight, font-size, font-family*/
+    /*agrupei todos os elementos anteriores em uma linha, atenção na ordem*/
+}
+iframe{
+    width: 100%;
+    height: 20em;
+}
+.txt {
+    text-align: left;
+    text-indent: 50px;
+    letter-spacing: none;
+    word-wrap: none; /*quebra de palavra*/
+}
+.gradient {
+    background-image: linear-gradient(to bottom, #C3DAFD, #D3CDFA);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+/* paleta */
+.pastel-rain-1-hex { color: #EAC3FD; }
+.pastel-rain-2-hex { color: #C4AFE3; }
+.pastel-rain-3-hex { color: #D3CDFA; }
+.pastel-rain-4-hex { color: #AFB6E3; }
+.pastel-rain-5-hex { color: #C3DAFD; }
+
+/*NAV*/
+    .nvm {
+        min-width: 590px; /*ta aki pro menu n quebrar, mas preciso procurar uma maneira melhor dele se adaptar ao tamanho*/
+        overflow-x: auto;
+        position: sticky;
+        top: 0;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0D7Ea2;
+        }
+        li {
+            float: left;
+        }
+        li a, .dropbtn {
+            display: block;
+            color: #ffffff;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size:medium;
+            text-align: center;
+            padding: 16px 30px;
+            text-decoration: none;
+        }
+        li:hover {
+            background-color: #074B69;
+        }
+        li > div {
+            display: none;
+        }
+        li:hover > div {
+            display: block;
+            color: #ffffff;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size:small;
+            text-align: center;
+            padding: 1px 3px;
+            text-decoration: none;
+        }
+    }
+    nav img{
+        float: left;
+        margin: 10px 10px auto 10px;
+    }
+
+    nav > .boxpesquisa {
+        float: right;
+        padding: 10px;
+        border: solid 1px var(--cor0);
+        border-radius: 4px;
+        font-weight: normal;
+        margin: 0px 10px 0px 0px;
+    }
+
+/* tentativa de um segundo NVM q n deu certo
+    .nvm2 {
+        min-width: 590px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0D7Ea2;
+        }
+        li {
+            padding: 0;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% auto;
+            grid-template-rows: 50px;
+
+        }
+        li a{
+            display: block;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 16px 30px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #074B69;
+        }
+    }
+    .nvm2-img{
+        float: left;
+        margin: 10px 10px 0px;
+    }
+*/
+
+    .bnvm { 
+        position: relative;
+        display: flex;
+    }
+    .bnvm > span {
+        margin: 10px 20px 10px 0px;
+    }
+
+
+/*BOTÕES*/
+    .bprimario {
+        background-color: #0D7Ea2;
+        color: white;
+        padding: 10px 14px;
+        border: 1px solid #0D7Ea2;
+        border-radius: 4px;
+        box-shadow: 0px 1px 2px 1px rgba(55, 105, 112, 0.4); 
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:medium;
+        text-decoration: none;
+        display: inline;
+        margin: 2px; /*o espaçamento dos botões no alcance é feito de maneira diferente, aki é mais uma gambiarra q funciona*/
+        cursor: pointer;
+    }
+    .bprimario:hover {
+        background-color: #074B69;
+        border: 1px solid #074B69;
+        color:#ffffff;
+    }
+    .bprimario:active{
+        background-color:#07648D;
+        border: 1px solid #07648D;
+        color:#ffffff;
+    }
+    .bprimario:disabled{
+        background-color:#e6e6e66c;
+        border: 1px solid #e6e6e66c;
+        color:#5C5C5C;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+    .bprimario > a {
+        font: normal 400 1em "Roboto", sans-serif;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+    .bsecundario{
+        background-color: #ffffff;
+        color: #07648D;
+        padding: 10px 14px;
+        border: 1px solid #07648D;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px 0px rgba(55, 105, 112, 0.3);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        font-style: normal;
+        text-decoration: none;
+        display: inline;
+        margin: 2px;
+        cursor: pointer;
+    }
+    .bsecundario:hover{
+        background-color: #dae9ee;
+        color:#07648D;
+    }
+    .bsecundario:active{
+        background-color:#e1f3f8;
+        color:#2e6276;
+    }
+    .bsecundario:disabled{
+        background-color:#e6e6e66c;
+        border: 1px solid #e6e6e66c;
+        color:#5C5C5C;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+    .bsecundario > a {
+        font: normal 400 1em "Roboto", sans-serif;
+        color: #07648D;
+        text-decoration: none;
+    }
+
+    .bround{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0.6);/*coloquei aki mas tem q encontra uma maneira de mudar a cor/transparencia do incone q é uma imagem*/
+        padding: 12px 14px 10px 14px;
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size:medium;
+        text-decoration: none;
+        display: inline-block;
+        margin: 2px;
+        cursor: pointer;
+    }
+    .bround:hover{
+        background-color: rgba(0, 0, 0, 0.1); /*a ideia aki era q a cor do hover ser uma cor mais escuta do bg, funcionou mas n ficou dos melhores ainda*/
+        color:#000000;
+    }
+    .bround:active{
+        background-color:rgba(0, 0, 0, 0.05);
+        color:#000000;
+    }
+    .bround>img {
+        max-height: 12px;
+    }
+    .bround:disabled{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        color:#5C5C5C;
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+
+/*DROPDOWN*/
+
+.dropdown-simple {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-simple-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor1);
+    min-width: 100px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.171);
+    padding: 1px 1px;
+    z-index: 1;
+}
+.dropdown-simple-content table {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-simple:hover .dropdown-simple-content table {
+    display: block;
+}
+
+.dropdown-button {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-button-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-button-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .dropdown-button-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown-button:hover .dropdown-button-content {
+    display: block;
+  }
+
+.dropdown-button-click { /*dropdown com click ainda n está funcionando*/
+    position: relative;
+    display: inline-block;
+}
+  .dropdown-button-click-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-button-click-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .dropdown-button-click-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown-button-click:active .dropdown-button-click-content {
+    display: block;
+  }
+  .dropdown-button-click-content:hover {
+    display: block;
+  }
+
+/* tentativa de um modal (VOLTAR DEPOIS)
+    .popup-warning{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 638px;
+        background-color: whitesmoke;
+        caption {
+            border: 1px solid #dddddd;
+            padding: 10px 25px; 
+            height: 40px;
+            background-color: whitesmoke;
+            font-size: larger;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px 10px;
+            height: 260px;
+        }
+    }
+
+    .modal{
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid black;
+        border-radius: 4px;
+        width: 638px;
+        background-color: white;
+        margin: 50px;
+    }
+    .modal > h2 {
+        background-color: whitesmoke;
+        min-height: 60px;
+    }
+    .modal-footer {
+    }
+*/ /*tentei fazer um modal, um popup de confirmação mas n consegui, voltar aki depois*/
+
+    .txtlink2{    
+        a:link {
+            color:#344ddf;text-decoration:none;
+        }
+        a:visited {
+            color:#344ddf;text-decoration:none;
+        }
+        a:hover {
+            text-decoration:underline;
+        } 
+    } /*assim n funciona, du know why*/
+
+    a.txtlink:link {
+        color:#344ddf;text-decoration:none;
+    }
+    a.txtlink:visited {
+        color:#344ddf;text-decoration:none;
+    }
+    a.txtlink:hover {
+        text-decoration:underline;
+    } /*so consegui fazer funcionar assim, mas precisa ser separado assim? não funciona da mesma maneira q os botões ali em cima?*/
+
+    ul.a{
+        list-style-image: url(imagens/icone/favicon-16x16.png);
+    }
+    ol.a{
+        list-style-image: url(imagens/icone/favicon-16x16.png);
+    }

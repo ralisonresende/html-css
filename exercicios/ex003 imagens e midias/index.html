@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/icone/gatoloko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Testes com midias</title>
+
+</head>
+<body>
+    <h1>Site pra Testes com Imagens</h1>
+
+    <div class="grid-img">
+         <div>
+             <img src="garota_jaqueta.png" alt="Girl with a jacket" title="Imagens simples">
+             <!-- Imagem pode ser colocada sem o tamanho. -->
+             <!-- na caixa src apertar (ctrl+epaço) para abrir a lista de imagens-->
+
+         </div>
+
+         <div>
+             <img src="imagens/garota_jaqueta.PNG" alt="Girl with a jacket" title="Imagem dentro da pasta">
+             <!--a pasta da imagem precisa estar na mesma pasta do codigo?-->
+
+         </div>
+
+         <div>
+             <img  src="https://media.istockphoto.com/id/1268703814/pt/foto/young-blonde-girl-with-disheveled-hair-on-a-city-street.jpg?s=2048x2048&w=is&k=20&c=uZ-04-OiS3GeaQdY62PbzhdvClVyDXC8cb0uvi0JTDw=" alt=" Girl with a jacket" title="imagem com link" style="width: 50%;">
+
+         </div>
+    </div>
+    
+    <img src="garota_jaqueta.png" alt="Girl with a jacket" width="481" height="444" title="Imagens simples">
+    <img src="garota_jaqueta.png" alt="Girl with a jacket" style="width:481px;height:444px;" title="Imagens simples">
+    <p>Imagens com tamanho customizado</p>  <!-- usar style pra mecher nas imagem previne erros como esse-->
+<!--
+     <p>Imagem fora da pasta do arquivo</p>
+     <img src="" alt="">
+-->
+     <a href="https://br.pinterest.com/pin/972777588249689957/" target="_blank"><img src="garota_jaqueta.png" alt="Girl with a jacket" title="Pinterest"></a> 
+<!-- imagem como link-->
+     <p>Imagem como link.</p>
+
+     <img src="garota_jaqueta.PNG" alt="Girl with a jacket" usemap="#link">
+     <map name="link">
+        <area shape="circle" coords="150,150,100" href="https://br.pinterest.com/pin/972777588249689957/" alt="Girl with a jacket" title="pinterest">
+        <area shape="rect" coords="10,10,60,60" href="https://br.pinterest.com/pin/972777588249689957/" alt="Girl with a jacket" title="batata">
+     </map>
+     <p>Imagem como link so em uma parte da imagem</p>
+<!-- area clicave não se adapta ao tamanho do site?-->
+
+     <img src="garota_jaqueta.png" alt="Girl with a jacket" style="float:left;width:120px;height:111px;" title="Imagens simples"> 
+     <p>imagem flutuante? <br> Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. </p>
+
+     <p style="background-image: url('garota_jaqueta.PNG');">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias repellat nihil enim, aut aliquid qui libero ad laboriosam maiores suscipit sed doloribus accusantium dolores ratione corporis inventore dolorum repellendus officia!</p>
+     <br>
+<hr>
+     <picture> <!-- pode ser usado pra poupar dados de navegação carregando uma imagem menor, alem de poder ser usado para colocar multiplos formatos de imagem .png .jpg etc-->
+        <source media="(min-width: 1200px)" srcset="imagens/foto-gg.png" type="image/png">
+        <source media="(min-width: 900px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 600px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Girl with a jacket">
+    </picture>
+     <p>imagem com adaptação ao tamanho do site</p><!-- trabalhar com "min" faz mais sentido pra mim-->
+
+     <picture>
+        <source media="(max-width: 600px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 800px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width: 1100px)" srcset="imagens/foto-g.png" type="image/png">
+        <img src="imagens/foto-gg.png" alt="Girl with a jacket">
+    </picture>
+     <p>imagem com adaptação ao tamanho do site</p> 
+
+ <!--  assim ele não carrega a imagem
+     <picture>
+        <source media="(min-width: 1200px)" srcset="imagens/foto-gg.png" type="image/png">
+        <source media="(min-width: 900px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 600px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(min-width: 400px)" srcset="imagens/foto-p.png" type="image/png">
+    </picture>
+     <p>imagem com adaptação ao tamanho do site</p> 
+ -->
+
+    <h1>Site pra Testes com Midias</h1>
+    <p class="b4"><a href="pag002.html"> videos e audios hospedados em outros sites ></a>
+
+     <h2> teste com audios, maneiras de incluir audios </h2>
+        <audio src="midia/woods.mp3" preload="metadata" controls loop></audio>
+
+        <!--"preload" é pra informar ao navegador oq ele precisa carregar de maneira previa 
+        auto=carregar tudo(pode deixar o site lento) 
+        metadata= somente informações basicas como tamanho etc
+        none= carregar nada -->
+        <!-- "controls adiciona os controles de play, volume etc"-->
+
+        <audio preload="metadata" controls>
+            <source src="midia/woods.mp3" type="audio/mpeg">
+        <!--<source src="midia/woods.mp3" type="audio/ogg"> 
+        <source src="midia/woods.mp3" type="audio/wave"> 
+        - posso colocar varios formatos caso o navegador não carregue um dos formatos mais convencionais
+        - ele carrega na ordem de cima pra baixo-->
+            <p>caso n seja compativel com nenhum formato, podemos colocar uma mensagem avisando o usuario, ou até um <a href="midia/woods.mp3"> link </a> para ele baixar</p>
+        </audio>
+
+    <h2> teste de video</h2>
+        <video width="280" poster="imagens/pikatumb.PNG" src="midia/pikashock.mp4" preload="metadata" allow="autoplay" controls loop></video>
+        <!-- "poster" é pra pur thumbnail-->
+
+        <video width="280" poster="imagens/pikatumb.PNG" preload="metadata" controls loop>
+            <source src="midia/pikashock.mp4" type="video/mp4">
+        <!--<source src="midia/pikashock.mp4" type="video/mp4">
+            <source src="midia/pikashock.mp4" type="video/mp4">
+        - mesmo esquema dos audios -->
+            <p>mesmo esquema do audio, da pra colocar uma mensagem e até o <a href="midia/pikashock.mp4"> link</a> pra baixar</p>
+        </video>
+     </p>
+ 
+</body>
+</html>

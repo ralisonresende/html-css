@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagens/icone/gatoloko.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <title>hierarquia, cemantica, formatação</title>
+
+    <style>
+        .ponto {
+            color: #d31e1e;
+        }
+        
+        body {
+            background-color: #cccccc; /*se eu repetir o comando aki com um valor diferente da "stylesheet" esse aki leva prioridade na representação do site*/
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="nvm" id="nvm">    
+        <ul>
+            <li class="nvm-img">
+                <img src="imagens/icone/favicon-32x32.png" alt="gatoloko">
+            </li>
+            <li><a href="index.html">Hierarquia</a></li>
+            <li><a href="pag002.html">Tabelas</a></li>
+            <li><a href="pag003.html">Listas</a></li>
+            <li><a href="batata.html">Batata</a></li>
+            <li style="float: right;"><a href="#"> O</a></li>
+        </ul>
+    </nav>
+
+    <div class="a-info">
+        <span> <img src="imagens/info.svg" alt="catloko"> </span>
+        <p>
+            <strong>Info</strong>
+            <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit optio voluptates eos at atque eligendi natus consectetur ipsum? Ratione, omnis harum laudantium sunt aliquid repellat esse quisquam eaque repellendus!
+        </p>
+    </div>
+    <div class="a-success">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#2F4A0B"><path d="M480-96q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q63 0 120 19t105 54l-52 52q-37-26-81-39.5T480-792q-130 0-221 91t-91 221q0 130 91 221t221 91q130 0 221-91t91-221q0-21-3-41.5t-8-40.5l57-57q13 32 19.5 67t6.5 72q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm-55-211L264-468l52-52 110 110 387-387 51 51-439 439Z"/></svg> 
+        <!--horrivel mas funciona, ver melhor como incluir essas bibliotecas de icones-->
+        <!--da pra carregar arquivo svg com a tag "img"-->
+        <p> 
+            <strong>Sucesso</strong>
+            <br> aleta ai man 👍
+        </p>
+    </div>
+    <div class="a-warning">
+        <span> <img src="imagens/warning.svg" alt="catloko"> </span>
+        <p>
+            <strong>Alerta</strong>
+            <br>aleta ai man 👍 
+        </p>
+    </div>
+    <div class="a-error">
+        <span> <img src="imagens/error.svg" alt="catloko"> </span>
+        <p>
+            <strong>Error</strong>
+            <br> depois ver como q coloca o botão de fechar o alerta 😀
+        </p>
+    </div>
+
+    <header>
+        <h1>hierarquia, semantica, formatação</h1>
+    </header>
+
+
+    <article>
+        <h2>Subtitulo 01</h2>
+            <h3>Leren</h3>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. <span style="font-family: 'Courier New', Courier, monospace;">Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl.</span> <em>Suspendisse hendrerit fringilla ipsum vel lobortis</em>. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. <em>Pellentesque semper</em>, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed.<a class="txtlink" href=""> Vestibulum porttitor rhoncus erat</a>, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.
+                </p>
+                <p><b><a class="txtlink" href="#" target="_self" rel="noopener noreferrer">this is a zelda</a></b></p>
+                <p><b><a class="txtlink2" href="#" target="_self" rel="noopener noreferrer">this is a zelda</a></b></p>
+            <h3>Leren</h3>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. <strong>Morbi at magna non velit malesuada cursus feugiat id nisl</strong>. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.
+                </p>
+                <h4>lorem ipson</h4>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.
+                </p>
+    </article>
+    <article>
+        <h2>Subtitulo 02</h2>
+            <h3>Leren</h3>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed.</p>
+            <h3>Leren</h3>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.</p>
+            <h3>Leren</h3>
+                <p class="txt">Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.
+                <br>
+                Lorem ipsum loren ipson çáàêão. dolor sit amet, consectetur adipiscing elit. Etiam ornare vulputate purus, ut accumsan justo bibendum mattis. Morbi at magna non velit malesuada cursus feugiat id nisl. Suspendisse hendrerit fringilla ipsum vel lobortis. Nunc sagittis, nunc non maximus interdum, erat felis hendrerit nibh, nec <strong>venenatis eros mauris ut mi. Proin sapien lacus, lobortis sit amet sagittis id, scelerisque ac nibh. Pellentesque semper, nisi a suscipit scelerisque, massa mi tempus ex, nec placerat elit odio et justo. Sed egestas tincidunt leo, vitae finibus libero suscipit sed. Fusce libero ante, blandit at dapibus ac, elementum id ante. Praesent pulvinar convallis pharetra. Vestibulum porttitor rhoncus erat, sit amet pellentesque sem blandit sed. Phasellus euismod placerat risus, maximus blandit eros imperdiet porta. Ut mattis, ipsum vel congue vulputate, mi augue commodo felis, vel auctor eros nunc vitae nunc. Integer sodales egestas dignissim. Suspendisse egestas sit amet odio sed egestas. Nam eget viverra enim.</strong>
+                </p>
+        <br>
+    </article>
+
+    <nav class="bnvm">
+        <span class="b4"><a href="#nvm"> ↑ topo</a></span>
+    </nav> <!--procurar transições/animações com css-->
+
+    <button class="bprimario">next</button> <!--arrumei o botão mas como eu bot o link dentro?-->
+</body>
+</html> 
